@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import HomePic from "../../assets/img/Home-profile-img.png"
 import Typed from "typed.js";
+import { inf } from "../../assets/json/information.json"
 const Home = () => {
 
     useEffect(() => {
@@ -16,15 +17,18 @@ const Home = () => {
             typed.destroy()
         }
     }, [])
+
+    var data = require("../../assets/json/information.json")
+
     return (
         <section className="home" id="home">
             <div className="home-content">
-                <h3>Me llamo</h3>
-                <h1>Ismael Mehdi</h1>
+                <h3>Hola, soy</h3>
+                <h1>{data.home.name}</h1>
                 <h3>
                     <span className="multiple-text"></span>
                 </h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur labore eligendi pariatur similique dolor, consequatur eum nemo.</p>
+                <p>{data.home.info}</p>
                 <div className="social-media">
                     <a href="#"><i class='bx bxl-linkedin-square'></i></a>
                     <a href="#"><i class='bx bxl-github' ></i></a>

@@ -1,6 +1,8 @@
 import aboutImg from "../../assets/img/Home-profile-img.png"
 
 const About = () => {
+    var data = require("../../assets/json/information.json")
+
     return (
         <section className="about" id="about">
             <div className="about-img">
@@ -10,7 +12,7 @@ const About = () => {
             <div className="about-content">
                 <h2 className="heading">Acerca <span>de mi</span></h2>
                 <h3>Web developer + Data Cientist + IA with Python</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum recusandae cum maiores neque totam ipsa facere, veniam modi quaerat quos voluptatibus veritatis consectetur quisquam deleniti repellat cupiditate ullam iusto illum eaque. Repellat, voluptate modi hic autem dicta, illo optio quasi laudantium, alias enim itaque corporis ullam?</p>
+                <p>{data.about.info}</p>
                 <a href="#" className="btn">Leer Mas</a>
 
             </div>

@@ -2,6 +2,8 @@ import Header from "./components/Header";
 import Main from "./components/Main";
 import Footer from "./components/Footer";
 import ScrollReveal from "scrollreveal";
+import "./assets/css/style.css"
+import { useEffect } from "react";
 
 function App() {
 
@@ -23,19 +25,27 @@ function App() {
       };
     });
   };
-  // scrollReveal
 
-  ScrollReveal({
-    reset: true,
-    distance: '80px',
-    duration: 2000,
-    delay: 200
-  });
+  // scrollreaveal
 
-  ScrollReveal().reveal('.home-content,.heading', { origin: 'top' });
-  ScrollReveal().reveal('.home-img,.services-container,.portfolio-box,.contact form', { origin: 'bottom' });
-  ScrollReveal().reveal('.home-content h1,.about-img', { origin: 'left' });
-  ScrollReveal().reveal('.home-content p,.about-content', { origin: 'right' });
+
+  useEffect(() => {
+    ScrollReveal({
+      reset: true,
+      distance: '80px',
+      duration: 2000,
+      delay: 200
+    });
+
+    ScrollReveal().reveal('.home-content,.heading', { origin: 'top' });
+    ScrollReveal().reveal('.home-img,.services-container,.portfolio-box,.contact form', { origin: 'bottom' });
+    ScrollReveal().reveal('.home-content h1,.about-img', { origin: 'left' });
+    ScrollReveal().reveal('.home-content p,.about-content', { origin: 'right' });
+  }, [])
+
+
+
+
 
   return (
     < >

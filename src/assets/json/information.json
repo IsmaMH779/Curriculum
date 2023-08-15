@@ -1,0 +1,26 @@
+{
+    "home": {
+        "name": "Ismael Mehdi",
+        "info": "Soy un junior apasionado por el data cience, inteligencia artificial y desarrollo web. A través de mis proyectos, exploro cómo Python impulsa soluciones creativas y cómo cada desafío es una oportunidad de aprendizaje en el emocionante mundo tecnológico."
+    },
+    "about": {
+        "info": "Desde que descubrí mi amor por la programación, he estado dedicando mi tiempo a explorar y aprender sobre desarrollo web, Data cience e inteligencia artificial. Mi objetivo es utilizar mis habilidades para contribuir a proyectos emocionantes y expandir mis conocimientos en estas áreas emocionantes y en constante evolución."
+    },
+    "services": [
+        {
+            "title": "Web dev",
+            "inf": "Desarrollo web utilizando HTML, CSS, JavaScript, jQuerry para el front y Node.js, MySQL para el back . Familiaridad con la biblioteca de React.js, bootstrap",
+            "icon": "bx bx-code-alt"
+        },
+        {
+            "title": "Data cientist",
+            "inf": "Análisis de datos básico, visualización y uso de herramientas como pandas y Matplotlib. Interés en el aprendizaje automático y la resolución de problemas.",
+            "icon": "bx bxs-data"
+        },
+        {
+            "title": "IA",
+            "inf": " Conocimiento inicial en machine learning y el desarrollo de modelos de IA",
+            "icon": "bx bxl-python"
+        }
+    ]
+}

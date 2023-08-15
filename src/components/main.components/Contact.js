@@ -1,8 +1,10 @@
 const Contact = () => {
+
+
     return (
         <section className="contact" id="contact" >
             <h2 className="heading">Envíame un <span>mensaje</span></h2>
-            <form action="#">
+            <form>
                 <div className="input-box">
                     <input type="text" placeholder="Nombre" />
                     <input type="email" placeholder="Correo" />
